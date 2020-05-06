@@ -1,9 +1,9 @@
 ---
 templateKey: index-page
-title: Great coffee with a conscience
+title: Garrett Cornwell
 image: /img/home-jumbotron.jpg
-heading: Great coffee with a conscience
-subheading: Support sustainable farming while enjoying a cup
+heading: Garrett Cornwell
+subheading: Full-stack web engineer
 mainpitch:
   title: Why Kaldi
   description: >

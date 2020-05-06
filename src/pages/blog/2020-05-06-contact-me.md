@@ -4,7 +4,7 @@ title: Contact Me
 date: 2020-05-06T16:33:09.423Z
 description: The serverless function behind the contact me form.
 featuredpost: true
-featuredimage: /img/blog-index.jpg
+featuredimage: /img/go.png
 tags:
   - go
   - serverless
@@ -12,7 +12,7 @@ tags:
   - netlify
   - now
 ---
-![chemex](/img/chemex.jpg)
+![go](/img/go.png)
 
 ## Purpose
 

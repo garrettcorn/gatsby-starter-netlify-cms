@@ -1,7 +1,7 @@
 ---
 templateKey: index-page
-title: Garrett Cornwell
-image: /img/home-jumbotron.jpg
+title: I am Garrett Cornwell
+image: /img/code.png
 heading: Garrett Cornwell
 subheading: Full-stack web engineer
 mainpitch:

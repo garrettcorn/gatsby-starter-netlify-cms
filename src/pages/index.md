@@ -20,7 +20,7 @@ intro:
     - image: /img/gatsbyjs.png
       text: Gatsby is a free and open source framework based on React that helps
         developers build blazing fast websites and apps
-    - image: /img/go.png
+    - image: /img/gopher.png
       text: Go is a statically typed, compiled programming language designed at Google
         by Robert Griesemer, Rob Pike, and Ken Thompson. Go is syntactically
         similar to C, but with memory safety, garbage collection, structural

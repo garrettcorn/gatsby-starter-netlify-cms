@@ -4,6 +4,16 @@ import { graphql } from 'gatsby'
 import Layout from '../components/Layout'
 import Content, { HTMLContent } from '../components/Content'
 
+import Logo from "../img/logo.inline.svg"
+import UniversityIcon from "../img/university.inline.svg"
+import WorkIcon from "../img/source.code.hex.inline.svg"
+
+import {
+  VerticalTimeline,
+  VerticalTimelineElement,
+} from "react-vertical-timeline-component"
+import "react-vertical-timeline-component/style.min.css"
+
 export const AboutPageTemplate = ({ title, content, contentComponent }) => {
   const PageContent = contentComponent || Content
 
@@ -49,7 +59,64 @@ AboutPage.propTypes = {
   data: PropTypes.object.isRequired,
 }
 
-export default AboutPage
+export default () => {
+  return (
+    <Layout>
+        <VerticalTimeline>
+          <VerticalTimelineElement
+            className="vertical-timeline-element--work"
+            contentStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
+            contentArrowStyle={{ borderRight: "7px solid  rgb(33, 150, 243)" }}
+            date="2019 - present"
+            dateClassName="text-gray-800"
+            iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
+            icon={<WorkIcon />}
+          >
+            <h3 className="vertical-timeline-element-title">Web Engineer</h3>
+            <h4 className="vertical-timeline-element-subtitle">
+              Great Falls, MT
+            </h4>
+            <p>
+              Learning and apply web development. Exploring JAMSTACK, gatsby,
+              and golang.
+            </p>
+          </VerticalTimelineElement>
+          <VerticalTimelineElement
+            className="vertical-timeline-element--work"
+            date="2017 - 2019"
+            dateClassName="text-gray-800"
+            iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
+            icon={<WorkIcon />}
+          >
+            <h3 className="vertical-timeline-element-title">
+              Software Engineer I / Software Engineer II
+            </h3>
+            <h4 className="vertical-timeline-element-subtitle">Tucson, AZ</h4>
+            <p>Real time embedded systems, C++, Jenkins CI/CD, Agile</p>
+          </VerticalTimelineElement>
+          <VerticalTimelineElement
+            className="vertical-timeline-element--education"
+            date="2012 - 2016"
+            dateClassName="text-gray-800"
+            iconStyle={{ background: "rgb(233, 30, 99)", color: "#fff" }}
+            icon={<UniversityIcon />}
+          >
+            <h3 className="vertical-timeline-element-title">
+              Bachelor of Science in Computer Science
+            </h3>
+            <h4 className="vertical-timeline-element-subtitle">
+              Bachelor Degree
+            </h4>
+            <p>Montana State University - Bozeman</p>
+          </VerticalTimelineElement>
+          <VerticalTimelineElement
+            iconStyle={{ background: "rgb(16, 204, 82)", color: "#fff" }}
+            icon={<Logo />}
+          />
+        </VerticalTimeline>
+    </Layout>
+  )
+}
 
 export const aboutPageQuery = graphql`
   query AboutPage($id: String!) {

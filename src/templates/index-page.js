@@ -19,11 +19,12 @@ export const IndexPageTemplate = ({
     <div
       className="full-width-image margin-top-0"
       style={{
-        backgroundImage: `url(${
+        backgroundImage: `radial-gradient(circle at center, transparent 0, black 100%), url(${
           !!image.childImageSharp ? image.childImageSharp.fluid.src : image
         })`,
         backgroundPosition: `top left`,
         backgroundAttachment: `fixed`,
+        backgroundBlendMode: `saturation`,
       }}
     >
       <div
@@ -40,8 +41,8 @@ export const IndexPageTemplate = ({
           className="has-text-weight-bold is-size-3-mobile is-size-2-tablet is-size-1-widescreen"
           style={{
             boxShadow:
-              'rgb(255, 68, 0) 0.5rem 0px 0px, rgb(255, 68, 0) -0.5rem 0px 0px',
-            backgroundColor: 'rgb(255, 68, 0)',
+              'hsl(217, 71%, 53%) 0.5rem 0px 0px, hsl(217, 71%, 53%) -0.5rem 0px 0px',
+            backgroundColor: 'hsl(217, 71%, 53%)',
             color: 'white',
             lineHeight: '1',
             padding: '0.25em',
@@ -53,8 +54,8 @@ export const IndexPageTemplate = ({
           className="has-text-weight-bold is-size-5-mobile is-size-5-tablet is-size-4-widescreen"
           style={{
             boxShadow:
-              'rgb(255, 68, 0) 0.5rem 0px 0px, rgb(255, 68, 0) -0.5rem 0px 0px',
-            backgroundColor: 'rgb(255, 68, 0)',
+              'hsl(217, 71%, 53%) 0.5rem 0px 0px, hsl(217, 71%, 53%) -0.5rem 0px 0px',
+            backgroundColor: 'hsl(217, 71%, 53%)',
             color: 'white',
             lineHeight: '1',
             padding: '0.25em',
@@ -87,13 +88,6 @@ export const IndexPageTemplate = ({
                   </div>
                 </div>
                 <Features gridItems={intro.blurbs} />
-                <div className="columns">
-                  <div className="column is-12 has-text-centered">
-                    <Link className="btn" to="/products">
-                      See all products
-                    </Link>
-                  </div>
-                </div>
                 <div className="column is-12">
                   <h3 className="has-text-weight-semibold is-size-2">
                     Latest stories

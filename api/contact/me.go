@@ -33,16 +33,16 @@ func sendTelegramMsg(text string) {
 		log.Panic(err)
 	}
 
-	if chatID == -1 {
-		// No chatID was supplied to lets make sure the user knows what the chatID is
-		sendChatID(bot)
-	} else {
+	if chatID != -1 {
 		msg := tgbotapi.NewMessage(chatID, text)
 		bot.Send(msg)
 	}
+
+	// In case someone need to get a chat id somewhere
+	respondToUpdates(bot)
 }
 
-func sendChatID(bot *tgbotapi.BotAPI) {
+func respondToUpdates(bot *tgbotapi.BotAPI) {
 	u := tgbotapi.NewUpdate(0)
 	u.Timeout = 8
 

@@ -21,12 +21,11 @@ export default class Index extends React.Component {
   handleSubmit = (e) => {
     e.preventDefault()
     const form = e.target
-    fetch('/', {
+    fetch('/api/graphql', {
       method: 'POST',
       headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
       body: encode({
-        'form-name': form.getAttribute('name'),
-        ...this.state,
+        'query': '{msgtele(email:"' + this.state.email + '",msg:"' + 'from: ' + this.state.name + " - " + this.state.message + '")}',
       }),
     })
       .then(() => navigate(form.getAttribute('action')))
@@ -44,8 +43,6 @@ export default class Index extends React.Component {
                 name="contact"
                 method="post"
                 action="/contact/thanks/"
-                data-netlify="true"
-                data-netlify-honeypot="bot-field"
                 onSubmit={this.handleSubmit}
               >
                 {/* The `form-name` hidden field is required to support form submissions without JavaScript */}

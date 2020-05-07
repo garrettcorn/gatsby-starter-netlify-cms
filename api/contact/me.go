@@ -69,7 +69,7 @@ func sendChatID(bot *tgbotapi.BotAPI) {
 		case "status":
 			msg.Text = "I'm ok."
 		case "id":
-			msg.Text = fmt.Sprintf(%v, update.Message.Chat.ID)
+			msg.Text = fmt.Sprintf("%v", update.Message.Chat.ID)
 		default:
 			msg.Text = "I don't know that command"
 		}

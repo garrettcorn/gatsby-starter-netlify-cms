@@ -21,7 +21,9 @@ func envVariables() (apiKey string, chatID int64) {
 		// There was an error getting the CHATID
 		chatID = -1
 	}
-	return os.Getenv("TELEGRAMAPI"), chatID
+	apiKey = os.Getenv("TELEGRAMAPI")
+	log.Printf("apiKey: %v\nchatID: %v", apiKey, chatID)
+	return apiKey, chatID
 }
 
 func sendTelegramMsg(text string) {

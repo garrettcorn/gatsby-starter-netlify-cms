@@ -22,7 +22,6 @@ func envVariables() (apiKey string, chatID int64) {
 		chatID = -1
 	}
 	apiKey = os.Getenv("TELEGRAMAPI")
-	log.Printf("apiKey: %v\nchatID: %v", apiKey, chatID)
 	return apiKey, chatID
 }
 

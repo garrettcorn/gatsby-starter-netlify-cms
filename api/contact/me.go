@@ -45,18 +45,37 @@ func sendChatID(bot *tgbotapi.BotAPI) {
 	u := tgbotapi.NewUpdate(0)
 	u.Timeout = 60
 
-	updates, _ := bot.GetUpdatesChan(u)
+	updates := bot.GetUpdatesChan(u)
 
 	for update := range updates {
-		if update.Message == nil { // ignore any non-Message Updates
+		if update.Message == nil { // ignore any non-Message updates
 			continue
 		}
 
-		log.Printf("[%s] %s", update.Message.From.UserName, update.Message.Text)
+		if !update.Message.IsCommand() { // ignore any non-command Messages
+			continue
+		}
 
-		msg := tgbotapi.NewMessage(update.Message.Chat.ID, update.Message.Text)
-		msg.ReplyToMessageID = update.Message.MessageID
+		// Create a new MessageConfig. We don't have text yet,
+		// so we should leave it empty.
+		msg := tgbotapi.NewMessage(update.Message.Chat.ID, "")
 
-		bot.Send(msg)
+		// Extract the command from the Message.
+		switch update.Message.Command() {
+		case "help":
+			msg.Text = "type /sayhi or /status."
+		case "sayhi":
+			msg.Text = "Hi :)"
+		case "status":
+			msg.Text = "I'm ok."
+		case "id":
+			msg.Text = fmt.Sprintf(%v, update.Message.Chat.ID)
+		default:
+			msg.Text = "I don't know that command"
+		}
+
+		if _, err := bot.Send(msg); err != nil {
+			log.Panic(err)
+		}
 	}
 }

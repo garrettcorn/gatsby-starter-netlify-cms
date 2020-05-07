@@ -45,11 +45,11 @@ func sendTelegramMsg(text string) {
 
 func sendChatID(bot *tgbotapi.BotAPI) {
 	u := tgbotapi.NewUpdate(0)
-	u.Timeout = 5
+	u.Timeout = 8
 
 	updates, _ := bot.GetUpdates(u)
 
-	for update := range updates {
+	for _, update := range updates {
 		if update.Message == nil { // ignore any non-Message updates
 			continue
 		}

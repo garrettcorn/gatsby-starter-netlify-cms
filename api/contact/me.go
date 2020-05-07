@@ -63,7 +63,7 @@ func sendChatID(bot *tgbotapi.BotAPI) {
 		// Extract the command from the Message.
 		switch update.Message.Command() {
 		case "help":
-			msg.Text = "type /sayhi or /status."
+			msg.Text = "type /sayhi /status or /id."
 		case "sayhi":
 			msg.Text = "Hi :)"
 		case "status":

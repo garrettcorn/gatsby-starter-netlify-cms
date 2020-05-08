@@ -34,7 +34,7 @@ hello world
 
 I love this. Easy and beautiful way of sharing code.
 
-How about another example with line numbers and highlighting.
+How about another example with line numbers
 
 ```go{1-3,6}{numberLines: true}
 import(
@@ -42,14 +42,14 @@ import(
 )
 
 func main() {
-    fmt.Println("Line numbers make it easier to follow longer code snippets")
+    fmt.Println("Line numbers are great")
 }
 ```
 
 Output
 
 ```shell
-Line numbers make it easier to follow longer code snippets
+Line numbers are great
 ```
 
 An Image Just an example of throwing down an image.

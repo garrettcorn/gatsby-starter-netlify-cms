@@ -1,7 +1,7 @@
 ---
 templateKey: blog-post
 title: Playground
-date: 2020-04-04T03:46:11.184Z
+date: 2020-05-08T03:46:11.184Z
 description: The playground is a space of creativity, fun, problem solving, and
   expression. Creating something great is not easy, but it is possible, it can
   also be fun and rewarding with the right spirit.
@@ -36,7 +36,7 @@ I love this. Easy and beautiful way of sharing code.
 
 How about another example with line numbers
 
-```go{1-3,6}{numberLines: true}
+```go{numberLines: true}
 import(
     "fmt"
 )

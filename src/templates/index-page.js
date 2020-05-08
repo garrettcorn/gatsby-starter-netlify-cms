@@ -103,7 +103,6 @@ export const IndexPageTemplate = ({
             </div>
           </div>
         </div>
-        <p>Go to <a href="/.netlify/functions/gohello">/.netlify/functions/gohello</a> to see the function in action</p>
       </div>
     </section>
   </div>

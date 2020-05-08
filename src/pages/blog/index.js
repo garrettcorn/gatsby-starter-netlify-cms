@@ -12,6 +12,7 @@ export default class BlogIndexPage extends React.Component {
           style={{
             backgroundImage: `radial-gradient(circle at center, black 0, transparent 100%), url('/img/digitization.png')`,
             backgroundBlendMode: `saturation`,
+            backgroundPosition: `center`,
           }}
         >
           <h1

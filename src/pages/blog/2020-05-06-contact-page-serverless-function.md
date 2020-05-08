@@ -1,8 +1,8 @@
 ---
 templateKey: blog-post
-title: Contact Me
+title: Contact Page Serverless Function
 date: 2020-05-06T16:33:09.423Z
-description: The serverless function behind the contact me form.
+description: The serverless function behind the contact page form submission.
 featuredpost: true
 featuredimage: /img/go.png
 tags:

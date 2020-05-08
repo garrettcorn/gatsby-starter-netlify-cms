@@ -25,7 +25,7 @@ export default class Index extends React.Component {
       method: 'POST',
       headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
       body: encode({
-        'query': '{msgtele(email:"' + this.state.email + '",msg:"' + 'from: ' + this.state.name + " - " + this.state.message + '")}',
+        'query': '{msgtele(email:"' + this.state.email + '",msg:"from: ' + this.state.name + ' - ' + this.state.message + '")}',
       }),
     })
       .then(() => navigate(form.getAttribute('action')))
@@ -47,12 +47,6 @@ export default class Index extends React.Component {
               >
                 {/* The `form-name` hidden field is required to support form submissions without JavaScript */}
                 <input type="hidden" name="form-name" value="contact" />
-                <div hidden>
-                  <label>
-                    Don’t fill this out:{' '}
-                    <input name="bot-field" onChange={this.handleChange} />
-                  </label>
-                </div>
                 <div className="field">
                   <label className="label" htmlFor={'name'}>
                     Your name

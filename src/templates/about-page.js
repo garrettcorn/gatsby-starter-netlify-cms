@@ -1,21 +1,21 @@
-import React from 'react'
-import PropTypes from 'prop-types'
-import { graphql } from 'gatsby'
-import Layout from '../components/Layout'
-import Content, { HTMLContent } from '../components/Content'
+import React from "react";
+import PropTypes from "prop-types";
+import { graphql, Link } from "gatsby";
+import Layout from "../components/Layout";
+import Content, { HTMLContent } from "../components/Content";
 
-import Logo from "../img/logo.inline.svg"
-import UniversityIcon from "../img/university.inline.svg"
-import WorkIcon from "../img/source.code.hex.inline.svg"
+import Logo from "../img/logo.inline.svg";
+import UniversityIcon from "../img/university.inline.svg";
+import WorkIcon from "../img/source.code.hex.inline.svg";
 
 import {
   VerticalTimeline,
   VerticalTimelineElement,
-} from "react-vertical-timeline-component"
-import "react-vertical-timeline-component/style.min.css"
+} from "react-vertical-timeline-component";
+import "react-vertical-timeline-component/style.min.css";
 
 export const AboutPageTemplate = ({ title, content, contentComponent }) => {
-  const PageContent = contentComponent || Content
+  const PageContent = contentComponent || Content;
 
   return (
     <section className="section section--gradient">
@@ -32,17 +32,17 @@ export const AboutPageTemplate = ({ title, content, contentComponent }) => {
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
 AboutPageTemplate.propTypes = {
   title: PropTypes.string.isRequired,
   content: PropTypes.string,
   contentComponent: PropTypes.func,
-}
+};
 
 const AboutPage = ({ data }) => {
-  const { markdownRemark: post } = data
+  const { markdownRemark: post } = data;
 
   return (
     <Layout>
@@ -52,16 +52,24 @@ const AboutPage = ({ data }) => {
         content={post.html}
       />
     </Layout>
-  )
-}
+  );
+};
 
 AboutPage.propTypes = {
   data: PropTypes.object.isRequired,
-}
+};
 
 export default () => {
   return (
     <Layout>
+      <div class="container">
+        <div className="column is-10 is-offset-1">
+          <Link to="/resume">
+            <button className="button is-link is-large is-fullwidth">
+              View Resume
+            </button>
+          </Link>
+        </div>
         <VerticalTimeline>
           <VerticalTimelineElement
             className="vertical-timeline-element--work"
@@ -114,9 +122,10 @@ export default () => {
             icon={<Logo />}
           />
         </VerticalTimeline>
+      </div>
     </Layout>
-  )
-}
+  );
+};
 
 export const aboutPageQuery = graphql`
   query AboutPage($id: String!) {
@@ -127,4 +136,4 @@ export const aboutPageQuery = graphql`
       }
     }
   }
-`
+`;

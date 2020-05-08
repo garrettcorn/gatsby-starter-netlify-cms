@@ -36,7 +36,7 @@ const Footer = class extends React.Component {
                     <li>
                       <a
                         className="navbar-item"
-                        href="https:/gccms.netlify.app/admin/"
+                        href="https://gccms.netlify.app/admin/"
                         target="_blank"
                         rel="noopener noreferrer"
                       >

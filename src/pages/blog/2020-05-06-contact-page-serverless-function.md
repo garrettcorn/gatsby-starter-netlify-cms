@@ -1,7 +1,7 @@
 ---
 templateKey: blog-post
 title: Contact Page Serverless Function
-date: 2020-05-06T16:33:09.423Z
+date: 2020-05-08T04:12:38.145Z
 description: The serverless function behind the contact page form submission.
 featuredpost: true
 featuredimage: /img/go.png

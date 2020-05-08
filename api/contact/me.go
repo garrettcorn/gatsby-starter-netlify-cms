@@ -60,6 +60,7 @@ func respondToUpdates(bot *tgbotapi.BotAPI) {
 		// Create a new MessageConfig. We don't have text yet,
 		// so we should leave it empty.
 		msg := tgbotapi.NewMessage(update.Message.Chat.ID, "")
+		msg.ReplyToMessageID = update.Message.MessageID
 
 		// Extract the command from the Message.
 		switch update.Message.Command() {

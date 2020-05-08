@@ -26,11 +26,31 @@ func main() {
 }
 ```
 
+Output
+
 ```shell
 hello world
 ```
 
 I love this. Easy and beautiful way of sharing code.
+
+How about another example with line numbers and highlighting.
+
+```go {numberLines: true} {1-3,6}
+import(
+    "fmt"
+)
+
+func main() {
+    fmt.Println("Line numbers make it easier to follow longer code snippets")
+}
+```
+
+Output
+
+```shell
+Line numbers make it easier to follow longer code snippets
+```
 
 An Image Just an example of throwing down an image.
 

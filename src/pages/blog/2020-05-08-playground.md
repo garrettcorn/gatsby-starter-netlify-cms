@@ -36,7 +36,7 @@ I love this. Easy and beautiful way of sharing code.
 
 How about another example with line numbers and highlighting.
 
-```go {numberLines: true} {1-3,6}
+```go{1-3,6}{numberLines: true}
 import(
     "fmt"
 )

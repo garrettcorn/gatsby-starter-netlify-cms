@@ -12,7 +12,7 @@ tags:
   - code
   - fun
 ---
-I always loved going to the playground as a kid. Some activities at the playground can be quite physically challenging, but the challenges never diminished the joy. I feel like an important lesson can be learn at the ground. Never let difficulty get in the way of the fun. If you have a passion for something, pursue it. Greatness comes from failing over and over again, learning to embrace and learn from failures is the only way to find true success.
+I always loved going to the playground as a kid. Some activities at the playground can be quite physically challenging, but the challenges never diminished the joy. I feel like an important lesson can be learned at the ground. Never let the difficulty get in the way of the fun. If you have a passion for something, pursue it. Greatness comes from failing over and over again, learning to embrace and learn from failure is the only way to overcome obstacles and find success.
 
 This is an Example of Code Highlighting Using PrismJS
 

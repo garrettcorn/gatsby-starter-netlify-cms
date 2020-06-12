@@ -2,19 +2,20 @@
 templateKey: index-page
 title: I am Garrett Cornwell
 image: /img/code.png
-heading: Garrett Cornwell
+heading: Interests
 subheading: Full-stack web engineer
 mainpitch:
   title: Learn, Build, Apply
-  description: I have a passion for technology. I love to engineer unique
-    solutions with new ideas and tools.
+  description: I have a passion for technology. I love to engineer optimal
+    solutions using the latest cutting edge technology and recommendations.
 description: I'm currently interested and exploring JAMSTACK. This site is built
-  on a JAMSTACK, GatsbyJS front-end and Golang serverless functions for the
-  back-end - no DB currently, but utilizing netlify auth and a few other
-  services. It is easy to go from an idea to live on the web when utilizing a
+  on a JAMSTACK, GatsbyJS front-end, Golang back-end (serverless functions). 
+  It is easy to go from an idea to live on the web when utilizing a
   JAMSTACK. I really enjoy the experience as a developer who doesn't want to be
-  spending a bunch of time messing with server or container configs, security
+  spending a lot of time messing with server or container configs, security
   certificates, and other task that are eliminated when utilizing a JAMSTACK.
+  It is fast to develop in, performant, and very flexible once you learn the 
+  newaunces.
 intro:
   blurbs:
     - image: /img/gatsbyjs.png
@@ -37,26 +38,4 @@ intro:
         to handle everything from small to very large projects with speed and
         efficiency. Git is easy to learn and has a tiny footprint with lightning
         fast performance.
-  heading: What we offer
-  description: >
-    Kaldi is the ultimate spot for coffee lovers who want to learn about their
-    java’s origin and support the farmers that grew it. We take coffee
-    production, roasting and brewing seriously and we’re glad to pass that
-    knowledge to anyone. This is an edit via identity...
-main:
-  heading: Great coffee with no compromises
-  description: >
-    We hold our coffee to the highest standards from the shrub to the cup.
-    That’s why we’re meticulous and transparent about each step of the coffee’s
-    journey. We personally visit each farm to make sure the conditions are
-    optimal for the plants, farmers and the local environment.
-  image1:
-    alt: A close-up of a paper filter filled with ground coffee
-    image: /img/products-grid3.jpg
-  image2:
-    alt: A green cup of a coffee on a wooden table
-    image: /img/products-grid2.jpg
-  image3:
-    alt: Coffee beans
-    image: /img/products-grid1.jpg
 ---

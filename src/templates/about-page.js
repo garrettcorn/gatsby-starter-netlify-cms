@@ -85,8 +85,7 @@ export default () => {
               Great Falls, MT
             </h4>
             <p>
-              Learning and apply web development. Exploring JAMSTACK, gatsby,
-              and golang.
+              Studied and applied web technologies including HTML, CSS, Golang, and Javascript. Crafted JAMSTACK websites utilizing GatsbyJS and NextJS React frameworks with serverless functions written in Golang and NodeJS.
             </p>
           </VerticalTimelineElement>
           <VerticalTimelineElement
@@ -100,7 +99,7 @@ export default () => {
               Software Engineer I / Software Engineer II
             </h3>
             <h4 className="vertical-timeline-element-subtitle">Tucson, AZ</h4>
-            <p>Real time embedded systems, C++, Jenkins CI/CD, Agile</p>
+            <p>Worked on real time embedded systems utilizing test driven development in C++, CI/CD using Jenkins, and Agile software development principles.</p>
           </VerticalTimelineElement>
           <VerticalTimelineElement
             className="vertical-timeline-element--education"

@@ -6,21 +6,13 @@ heading: Interests
 subheading: Full-stack web engineer
 mainpitch:
   title: Learn, Build, Apply
-  description: I have a passion for technology. I love to engineer optimal
-    solutions using the latest cutting edge technology and recommendations.
-description: I'm currently interested and exploring JAMSTACK. This site is built
-  on a JAMSTACK, GatsbyJS front-end, Golang back-end (serverless functions). 
-  It is easy to go from an idea to live on the web when utilizing a
-  JAMSTACK. I really enjoy the experience as a developer who doesn't want to be
-  spending a lot of time messing with server or container configs, security
-  certificates, and other task that are eliminated when utilizing a JAMSTACK.
-  It is fast to develop in, performant, and very flexible once you learn the 
-  newaunces.
+  description: Technology is my passion. I thrive on logically engineering optimal solutions by incorporating cutting edge technology.
+description: I am currently exploring the application of JAMSTACK. This site is built using JAMSTACK, GatsbyJS for the front-end, and serverless functions using Golang for the back-end. Utilizing JAMSTACK developers can efficiently bring ideas to life. As a developer, I appreciate spending less time with server configurations, security certificates, and other tasks that are mostly eliminated. JAMSTACK yields speedy development, excellent performance, and is quite flexible once you learn the mechanics.
 intro:
   blurbs:
     - image: /img/gatsbyjs.png
       text: Gatsby is a free and open source framework based on React that helps
-        developers build blazing fast websites and apps
+        developers build blazing fast websites and apps.
     - image: /img/gopher.png
       text: Go is a statically typed, compiled programming language designed at Google
         by Robert Griesemer, Rob Pike, and Ken Thompson. Go is syntactically

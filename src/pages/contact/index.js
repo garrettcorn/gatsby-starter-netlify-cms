@@ -25,7 +25,14 @@ export default class Index extends React.Component {
       method: 'POST',
       headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
       body: encode({
-        'query': '{msgtele(email:"' + this.state.email + '",msg:"from: ' + this.state.name + ' - ' + this.state.message + '")}',
+        query:
+          '{msgtele(email:"' +
+          this.state.email +
+          '",msg:"from: ' +
+          this.state.name +
+          ' - ' +
+          this.state.message +
+          '")}',
       }),
     })
       .then(() => navigate(form.getAttribute('action')))

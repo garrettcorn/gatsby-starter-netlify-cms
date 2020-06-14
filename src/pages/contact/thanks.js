@@ -7,7 +7,10 @@ export default () => (
       <div className="container">
         <div className="content">
           <h1>Message Sent!</h1>
-          <p>To find out exactly what just happened visit my corresponding blog page.</p>
+          <p>
+            To find out exactly what just happened visit my corresponding blog
+            page.
+          </p>
         </div>
       </div>
     </section>

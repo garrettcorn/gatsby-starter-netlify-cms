@@ -1,21 +1,21 @@
-import React from "react";
-import PropTypes from "prop-types";
-import { graphql, Link } from "gatsby";
-import Layout from "../components/Layout";
-import Content, { HTMLContent } from "../components/Content";
+import React from 'react'
+import PropTypes from 'prop-types'
+import { graphql, Link } from 'gatsby'
+import Layout from '../components/Layout'
+import Content, { HTMLContent } from '../components/Content'
 
-import Logo from "../img/logo.inline.svg";
-import UniversityIcon from "../img/university.inline.svg";
-import WorkIcon from "../img/source.code.hex.inline.svg";
+import Logo from '../img/logo.inline.svg'
+import UniversityIcon from '../img/university.inline.svg'
+import WorkIcon from '../img/source.code.hex.inline.svg'
 
 import {
   VerticalTimeline,
   VerticalTimelineElement,
-} from "react-vertical-timeline-component";
-import "react-vertical-timeline-component/style.min.css";
+} from 'react-vertical-timeline-component'
+import 'react-vertical-timeline-component/style.min.css'
 
 export const AboutPageTemplate = ({ title, content, contentComponent }) => {
-  const PageContent = contentComponent || Content;
+  const PageContent = contentComponent || Content
 
   return (
     <section className="section section--gradient">
@@ -32,17 +32,17 @@ export const AboutPageTemplate = ({ title, content, contentComponent }) => {
         </div>
       </div>
     </section>
-  );
-};
+  )
+}
 
 AboutPageTemplate.propTypes = {
   title: PropTypes.string.isRequired,
   content: PropTypes.string,
   contentComponent: PropTypes.func,
-};
+}
 
 const AboutPage = ({ data }) => {
-  const { markdownRemark: post } = data;
+  const { markdownRemark: post } = data
 
   return (
     <Layout>
@@ -52,12 +52,12 @@ const AboutPage = ({ data }) => {
         content={post.html}
       />
     </Layout>
-  );
-};
+  )
+}
 
 AboutPage.propTypes = {
   data: PropTypes.object.isRequired,
-};
+}
 
 export default () => {
   return (
@@ -73,11 +73,11 @@ export default () => {
         <VerticalTimeline>
           <VerticalTimelineElement
             className="vertical-timeline-element--work"
-            contentStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
-            contentArrowStyle={{ borderRight: "7px solid  rgb(33, 150, 243)" }}
+            contentStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
+            contentArrowStyle={{ borderRight: '7px solid  rgb(33, 150, 243)' }}
             date="2019 - present"
             dateClassName="text-gray-800"
-            iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
+            iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
             icon={<WorkIcon />}
           >
             <h3 className="vertical-timeline-element-title">Web Engineer</h3>
@@ -93,7 +93,7 @@ export default () => {
             className="vertical-timeline-element--work"
             date="2017 - 2019"
             dateClassName="text-gray-800"
-            iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
+            iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
             icon={<WorkIcon />}
           >
             <h3 className="vertical-timeline-element-title">
@@ -106,7 +106,7 @@ export default () => {
             className="vertical-timeline-element--education"
             date="2012 - 2016"
             dateClassName="text-gray-800"
-            iconStyle={{ background: "rgb(233, 30, 99)", color: "#fff" }}
+            iconStyle={{ background: 'rgb(233, 30, 99)', color: '#fff' }}
             icon={<UniversityIcon />}
           >
             <h3 className="vertical-timeline-element-title">
@@ -118,14 +118,14 @@ export default () => {
             <p>Montana State University - Bozeman</p>
           </VerticalTimelineElement>
           <VerticalTimelineElement
-            iconStyle={{ background: "rgb(16, 204, 82)", color: "#fff" }}
+            iconStyle={{ background: 'rgb(16, 204, 82)', color: '#fff' }}
             icon={<Logo />}
           />
         </VerticalTimeline>
       </div>
     </Layout>
-  );
-};
+  )
+}
 
 export const aboutPageQuery = graphql`
   query AboutPage($id: String!) {
@@ -136,4 +136,4 @@ export const aboutPageQuery = graphql`
       }
     }
   }
-`;
+`

@@ -13,7 +13,7 @@ Welcome friend, I am glad you are here. I wanted to quickly go over the purpose 
 
 I created this site to practice my favorite craft, web development. I have been taking online courses by [Todd McLeod](https://www.udemy.com/user/toddmcleod/%22) and felt like now was the right time to dive in. This site will serve to show my expertise, and even lack of expertise, in the incredibly deep world of web development. I hope my passion for learning and development will be clearly visible on this site.
 
-This site will mainly be dedicated to technology, more specifically web technology. I may post about other passions of mine along the way, such as but not limited to, personal finance, Linux, parenthood, and other programming related topics. I have always had a fascination and passion for technology, and I am thrilled to have the opportunity to craft and work with technology every day.
+This site will mainly be dedicated to technology, more specifically web technology. I may post about other passions of mine along the way - such as but not limited to, personal finance, Linux, parenthood, and other programming related topics. I have always had a fascination and passion for technology, and I am thrilled to have the opportunity to craft and work with technology every day.
 
 ## Where to go next
 

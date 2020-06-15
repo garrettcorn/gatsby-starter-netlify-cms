@@ -6,19 +6,19 @@ title: Resume
 
 ### Professional Experience
 
-#### Web Engineer
+#### Full Stack Web Engineer
 
 April 2019 - Now (1y)
 
-I have taken multiple online courses to retool myself as a full stack web developer. I find web development rewarding and exciting. I have a solid foundation in HTML, CSS, Go, Python, and Javascript. I am very interested and currently exploring JAMSTACK and gatsby. I really enjoy the beauty of serverless functions and having on-demand infrastructure.
+Expanded skill set to include full stack web development technologies: HTML, CSS, Javascript, and Golang. Took online courses by Computer Science professor Todd McLeod, and built JAMSTACK websites utilizing cutting edge technologies on various cloud computing hosts.
 
 #### Software Engineer I / Software Engineer II
 
 April 2017 - April 2019 (2y)
 
-Fortune 500 Defense Contractor
+Raytheon
 
-Developed and coordinated with multiple engineering groups to provide common software. Lead the DevOps effort on my team to provide CI/CD using Jenkins pipelines. Solved real world problems using design patterns and test driven development.
+Coordinated with multiple engineering groups to develop common software that solved real world problems using design patterns and test driven development. Lead the DevOps effort to provide CI/CD using Jenkins pipelines, which increased the efficiency and productivity of the team.
 
 ### Education
 
@@ -34,9 +34,9 @@ Montana State University - Bozeman, MT
 
 **Front End** - HTML, CSS, Javascript
 
-**JavaScript** - React, ES6
+**JavaScript** - React, GatsbyJS, NextJS, ES6
 
-**TDD** - UnitTest++, golang built in unit test
+**TDD** - UnitTest++, Golang's built in unit test suite
 
 **Others** - Golang, Python, Java, C, C++, GraphQL, SQL, XML
 
@@ -47,4 +47,4 @@ Montana State University - Bozeman, MT
 - Sports (Baseball, Racquetball, Wakeboarding)
 - Personal Finance
 - Blockchain / Crypto
-- Learning
+- Education

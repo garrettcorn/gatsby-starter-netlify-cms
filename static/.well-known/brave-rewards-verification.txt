@@ -1,0 +1,4 @@
+This is a Brave Rewards publisher verification file.
+
+Domain: garrettcornwell.vercel.app
+Token: a4e7cb525dbe922dda0a4e5289f51f12b6d07ec7eaa4e5814239f3aab683abe5
